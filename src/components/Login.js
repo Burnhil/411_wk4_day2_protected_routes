@@ -22,7 +22,10 @@ class App extends Component {
     e.preventDefault()
     // set cookie here
     // set loggedIn = true and max-age = 60*1000 (one minute)
-
+    //console.log(document.cookie);
+    //**set cookie to true after log in which will last 60 seconds then be invalid */
+    document.cookie = "loggedIn=true;max-age=60*1000"
+    //console.log(document.cookie);
     window.location.replace("/")
   }
 
